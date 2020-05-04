@@ -3,4 +3,4 @@
 
 ### Modelos de Classificação Implementados:
 
-**1.** K-Nearest Neighbors
+**1.** K-Nearest Neighbors (KNN)
