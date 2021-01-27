@@ -11,7 +11,7 @@
 import joblib
 import numpy as np
 import pandas as pd
-import sweetviz as sv
+# import sweetviz as sv
 
 from sklearn.datasets import load_iris
 from sklearn.metrics import accuracy_score
@@ -25,7 +25,6 @@ from sklearn.model_selection import train_test_split
 # região no espaço de entrada.
 
 # In[2]:
-
 
 iris = load_iris()
 print(iris.target)
@@ -44,8 +43,8 @@ df.head(5)
 # In[4]:
 
 # Análise Exploratória (sweetviz)
-analise = sv.analyze(df)
-analise.show_html('result.html')
+# analise = sv.analyze(df)
+# analise.show_html('result.html')
 
 # In[4]:
 
