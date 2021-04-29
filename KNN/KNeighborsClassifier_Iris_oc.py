@@ -4,14 +4,9 @@
 # # <font color='blue'>K-Nearest Neighbors Classifier</font>
 
 # # 0. Dependências
-
-# In[1]:
-
-
 import joblib
 import numpy as np
 import pandas as pd
-# import sweetviz as sv
 
 from sklearn.datasets import load_iris
 from sklearn.metrics import accuracy_score
@@ -23,18 +18,11 @@ from sklearn.model_selection import train_test_split
 # O KNN (K Nearest Neighbor) é um dos algoritmos mais utilizados em Machine Learning e também um dos mais simplistas.
 # Seu método de aprendizagem é baseado em instâncias e assume que os dados tendem a estar concentrados em uma mesma
 # região no espaço de entrada.
-
-# In[2]:
-
 iris = load_iris()
 print(iris.target)
 
 
 # # 2. Dados
-
-# In[3]:
-
-
 df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
 df['class'] = iris.target
 df['class'] = df['class'].map({0: iris.target_names[0], 1: iris.target_names[1], 2: iris.target_names[2]})
